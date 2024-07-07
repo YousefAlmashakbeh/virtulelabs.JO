@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microscopy of Cells</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Microscopy of Cells</h1>
+        <div class="controls">
+            <label for="cellType">Select Cell Type:</label>
+            <select id="cellType">
+                <option value="animal">Animal Cell</option>
+                <option value="plant">Plant Cell</option>
+                <option value="bacteria">Bacteria Cell</option>
+                <option value="fungal">Fungal Cell</option>
+                <option value="protist">Protist Cell</option>
+            </select>
+            <button id="viewButton">View Cell</button>
+        </div>
+        <canvas id="microscopeCanvas" width="800" height="600"></canvas>
+        <div class="details">
+            <h2 id="cellTitle"></h2>
+            <p id="cellDescription"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
